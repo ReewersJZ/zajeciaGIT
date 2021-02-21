@@ -1,0 +1,174 @@
+body{
+  overflow-x: hidden;
+  background-color: lightgray;
+}
+
+/* navigation */
+.navbar{
+  background-color: black;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.navbar-brand > img{
+  height: 1.8rem;
+}
+
+.navbar-nav li{
+  padding-right: 0.6rem;
+}
+
+.navbar .navbar-nav .nav-link{
+  color: white;
+  padding-top: 0.6rem;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+  color: lightgreen;
+}
+
+/* Landing */
+.home-inner{
+  background-image: url(img/computers.png);
+  background-size: contain;
+}
+
+.caption h1{
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+
+.caption h3{
+  padding-bottom: 1rem;
+}
+
+.caption{
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  color: white;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* course */
+#course{
+  background-color: lightgray;
+}
+
+/* feautures */
+.jumbotron{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: black;
+}
+
+.feautures-list{
+  list-style: none;
+}
+
+.line{
+  margin-bottom: 0;
+}
+
+/* clients */
+
+#clients{
+  background-color: white;
+}
+
+.client{
+  border-radius: 50%;
+  width: 90%;
+  min-width: 18vw;
+}
+
+.blockquote, .jumbo-line{
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* contact */
+footer, footer a, footer h3{
+  color: white;
+
+}
+
+footer a:hover, footer p:hover, footer h3:hover{
+  color: lightgreen;
+}
+
+#contact{
+  background-color: black;
+}
+
+
+/* all @media */
+@media all and (max-width: 767px){
+  .client{
+    width:50%;
+    max-width: 40vw;
+  }
+}
+
+@media all and(min-width: 768px) and (max-width:991px){
+  .client{
+    width: 70%;
+  }
+}
+
+
+
+
+/*============= SECTION =============*/
+
+/* .narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+} */
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+
