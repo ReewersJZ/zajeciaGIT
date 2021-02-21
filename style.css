@@ -1,51 +1,86 @@
-body{
+:root{
+  --backgroundGradient: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  --backgroundLight: rgba(42, 245, 152, 0.2);
+}
+
+
+
+body {
   overflow-x: hidden;
-  background-color: lightgrey;
 }
 
 /* navigation */
-.navbar{
-  background-color: black;
+.navbar {
+  background: var(--backgroundGradient);
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
 }
 
-.navbar-brand > img{
+.navbar-brand > img {
   height: 1.8rem;
 }
 
-.navbar-nav li{
+.navbar-nav li {
   padding-right: 0.6rem;
 }
 
-.navbar .navbar-nav .nav-link{
+.navbar-nav li:hover {
+  border-bottom: 1px solid yellow;
+}
+
+.navbar .navbar-nav .nav-link {
   color: white;
   padding-top: 0.6rem;
+  transition: all 0.3s;
 }
 
-.navbar .navbar-nav .nav-link:hover{
-  color: red;
+.navbar .navbar-nav .nav-link:hover {
+  color: blanchedalmond;
 }
 
+.btn-secondary{
+  background-color: #08AEEA;
+}
+
+.btn-secondary:hover{
+  background-color: #0685b3;
+}
 /* Landing */
-.home-inner{
+.home-inner {
   background-image: url(img/computers.png);
   background-size: contain;
 }
 
-.caption h1{
+.caption h1 {
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   padding-bottom: 1rem;
 }
 
-.caption h3{
+.showCapition {
+  animation: show 1s ease 0.5s both;
+  opacity: 0;
+  transform: translateY(1000px);
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.caption h3 {
   padding-bottom: 1rem;
 }
 
-.caption{
+.caption {
   width: 100%;
   position: absolute;
   top: 40%;
@@ -54,37 +89,44 @@ body{
   z-index: 1;
 }
 
+
 /* course */
-#course{
-  background-color: lightgray;
+#course {
+  background-color: var(--backgroundLight);
 }
 
 /* feautures */
-.jumbotron{
+.jumbotron {
   padding-bottom: 0;
   margin-bottom: 0;
   color: black;
+  background: white
 }
 
-.feautures-list{
+#resources .jumbotron{
+  background-color: var(--backgroundLight);
+}
+
+.feautures-list {
   list-style: none;
 }
 
-.line{
+.line {
   margin-bottom: 0;
 }
 
 /* clients */
 
-#clients{
+#clients {
   background-color: white;
 }
 
-.client{
+.client {
   border-radius: 50%;
   width: 90%;
   min-width: 18vw;
 }
+
 
 .client:hover{
   animation: rotation 1s linear 1 forwards;
@@ -119,40 +161,58 @@ body{
 }
 
 /* contact */
-footer, footer a, footer h3{
+footer,
+footer a,
+footer h3 {
   color: white;
-
 }
 
-footer a:hover, footer p:hover, footer h3:hover{
-<<<<<<< HEAD
-  color: green;
-=======
-  color: red;
->>>>>>> feauture3
+footer a:hover,
+footer p:hover,
+footer h3:hover {
+  color: yellow;
 }
 
-#contact{
-  background-color: black;
+#contact {
+  background: var(--backgroundGradient);
 }
-
 
 /* all @media */
-@media all and (max-width: 767px){
-  .client{
-    width:50%;
+@media all and (max-width: 767px) {
+  .client {
+    width: 50%;
     max-width: 40vw;
   }
 }
 
-@media all and(min-width: 768px) and (max-width:991px){
-  .client{
+@media all and(min-width: 768px) and (max-width: 991px) {
+  .client {
     width: 70%;
   }
 }
 
+.showText {
+  animation: appearText 1s ease-in-out both;
+}
 
+@keyframes appearText {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+.hidden {
+  visibility: hidden;
+}
 
 /*============= SECTION =============*/
 
@@ -182,7 +242,6 @@ footer a:hover, footer p:hover, footer h3:hover{
   color: white;
 } */
 
-
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
@@ -201,5 +260,3 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-
-
