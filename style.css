@@ -98,7 +98,7 @@ footer, footer a, footer h3{
 }
 
 footer a:hover, footer p:hover, footer h3:hover{
-  color: lightgreen;
+  color: green;
 }
 
 #contact{
