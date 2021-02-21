@@ -74,6 +74,15 @@ body{
   margin-bottom: 0;
 }
 
+/* spring gallery */
+
+.gallery__photo{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
 /* clients */
 
 #clients{
@@ -114,9 +123,14 @@ footer a:hover, footer p:hover, footer h3:hover{
   }
 }
 
-@media all and(min-width: 768px) and (max-width:991px){
+@media all and (min-width: 768px) and (max-width:991px){
   .client{
     width: 70%;
+  }
+
+  .gallery__photo{
+    height: 250px;
+    width: 250px;
   }
 }
 
