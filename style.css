@@ -127,8 +127,35 @@ body {
   min-width: 18vw;
 }
 
-.blockquote,
-.jumbo-line {
+
+.client:hover{
+  animation: rotation 1s linear 1 forwards;
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotate(0) scale(1);
+  }
+
+  25%{
+    transform: rotate(90deg) scale(1.25)
+  }
+
+  50%{
+    transform: rotate(180deg) scale(1.5)
+  }
+
+  75%{
+    transform: rotate(270deg) scale(1.25)
+  }
+
+  100%{
+    border: 20px solid lightgreen;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.blockquote, .jumbo-line{
   width: 70%;
   margin: 0 auto;
 }
